@@ -135,6 +135,7 @@ body { background: var(--bg); color: var(--text); }
   position:fixed; inset:0;
   background: rgba(10,10,10,0.95);
   justify-content:center; align-items:center;
+  z-index: 1000;
 }
 .modal-content {
   background: var(--card-bg);
@@ -144,6 +145,7 @@ body { background: var(--bg); color: var(--text); }
   color: var(--text);
   border: 1px solid var(--border);
   box-shadow:0 15px 30px rgba(0,0,0,0.7);
+  position: relative;
 }
 .modal-content span {
   font-size:24px;
@@ -167,7 +169,7 @@ body { background: var(--bg); color: var(--text); }
 }
 
 /* GALERIA MODAL */
-#modal-galeria { display:flex; gap:8px; margin-top:15px; justify-content:center; }
+#modal-galeria { display:flex; gap:8px; margin-top:15px; justify-content:center; flex-wrap:wrap; }
 #modal-galeria img { width:50px; cursor:pointer; border-radius:5px; transition:0.3s; border: 1px solid var(--border); }
 #modal-galeria img:hover { transform:scale(1.1); border-color: var(--primary); }
 
@@ -185,4 +187,3 @@ body { background: var(--bg); color: var(--text); }
 }
 .whatsapp-fixo:hover { background: #1ebe5d; color: #fff; transform:scale(1.1); }
 @keyframes pulse { 0%{transform:scale(1);} 50%{transform:scale(1.1);} 100%{transform:scale(1);} }
-Só esse bloco substituído — verde oficial do WhatsApp (#25D366) com hover levemente'
